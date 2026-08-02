@@ -31,6 +31,24 @@ const logs = [
     q: '首屏动效怕卡、怕劝退',
     a: '只用 transform / opacity / clip-path（GPU 友好，不触发重排）；每个区块进场 once:true 一次即停，不反复计算；并尊重 prefers-reduced-motion，开启该偏好的用户直接看到内容、跳过动画。',
   },
+  {
+    id: '06',
+    tag: 'GitHub Pages · 路径',
+    q: '视频和 Logo 部署后不显示',
+    a: '首页 Hero 视频、导航栏 MZ 图标、浏览器 favicon 最初都用了绝对路径（/hero.mp4、/logo.svg、/favicon.svg）。项目页部署在 GitHub Pages 的子路径 /mz_web/ 下，绝对路径会指向根域名顶层而 404。统一改成相对路径（./hero.mp4、./logo.svg、./favicon.svg），跟随页面位置加载，子路径部署也能正常显示。',
+  },
+  {
+    id: '07',
+    tag: 'CI · GitHub Actions',
+    q: '部署报错：找不到 Pages 站点',
+    a: 'GitHub Actions 第一次部署报 HttpError: 找不到 Pages 站点。原因是仓库刚建、Pages 还没启用。在 workflow 的 actions/configure-pages 步骤加上 enablement: true，让 CI 自动激活 Pages，之后每次 push 都自动构建并发布。',
+  },
+  {
+    id: '08',
+    tag: 'Git · 网络',
+    q: 'git push 连不上 GitHub',
+    a: '本机直连 github.com 网络不稳定，push 经常 Failed to connect / Connection was reset。两种办法：一是直接重试 git push，多试几次通常能连上；二是改用国内镜像中转 git push https://ghproxy.com/https://github.com/用户名/仓库.git main，由镜像服务器代连 GitHub，终点仓库完全一样。',
+  },
 ]
 
 export default function Projects() {
