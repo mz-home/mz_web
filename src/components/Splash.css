@@ -1,0 +1,42 @@
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg, #0A0B0D);
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.splash--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.splash__logo {
+  font-family: var(--font-display, "Syne", sans-serif);
+  font-weight: 700;
+  font-size: clamp(40px, 8vw, 88px);
+  letter-spacing: 0.04em;
+  color: var(--text, #ECECEC);
+  display: flex;
+}
+
+/* 单字符遮罩：内层字符从下方浮出 */
+.splash__char {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 1;
+}
+
+.splash__char-i {
+  display: inline-block;
+  will-change: transform;
+}
+
+.splash__dot {
+  color: var(--accent, #fff);
+}

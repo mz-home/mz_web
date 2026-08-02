@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+dist-ssr/
+
+# local node runtime (bundled for this project)
+node20/
+
+# logs
+*.log
+*.err
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
