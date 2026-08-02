@@ -70,7 +70,7 @@ export default function About() {
             <ul className="about__contact">
               <li>
                 <span>Email</span>
-                <a href="mailto:32442558402@qq.com">32442558402@qq.com</a>
+                <a href="mailto:3244258402@qq.com">3244258402@qq.com</a>
               </li>
               <li>
                 <span>Location</span>

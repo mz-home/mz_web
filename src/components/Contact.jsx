@@ -3,7 +3,7 @@ import { useState } from 'react'
 // 可选：在 .env 中配置 VITE_FORMSPREE_ID 即可用 Formspree 收信；
 // 未配置时，表单提交会自动打开访客的邮件客户端（mailto 回退），本地也能用。
 const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID
-const MAIL_TO = '32442558402@qq.com'
+const MAIL_TO = '3244258402@qq.com'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
