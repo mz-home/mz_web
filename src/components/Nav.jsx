@@ -33,7 +33,7 @@ export default function Nav() {
 
   return (
     <PillNav
-      logo="/logo.svg"
+      logo="./logo.svg"
       logoAlt="MZ"
       items={items}
       activeHref={active}
