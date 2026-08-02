@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="hero__bg-fallback" />
         <video ref={videoRef} className="hero__video" autoPlay muted loop playsInline preload="metadata">
           {/* 放入 public/hero.webm 可获得更小体积（需存在该文件，否则不要保留 source） */}
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="./hero.mp4" type="video/mp4" />
         </video>
         <div className="hero__bg-overlay" />
       </div>
