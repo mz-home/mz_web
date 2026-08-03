@@ -23,8 +23,8 @@ const edu = {
   city: '成都',
 }
 
-const skills = ['品牌识别', '视觉系统', '艺术指导', '字体设计', '包装', '展陈 / 空间']
-const tools = ['Figma', 'Photoshop', 'Illustrator', 'After Effects', 'Blender']
+const skills = ['品牌视觉', 'UI / 网页设计', 'React 前端', '动效设计', '字体设计', '设计系统']
+const tools = ['Figma', 'Photoshop', 'Illustrator', 'After Effects', 'Blender', 'VS Code']
 
 export default function About() {
   return (
@@ -89,23 +89,23 @@ export default function About() {
             <ol className="about__process">
               <li>
                 <b>01</b>
-                <span>沟通 Brief</span>
-                <p>了解目标、受众与边界</p>
+                <span>理解需求</span>
+                <p>先听清目标、受众与边界</p>
               </li>
               <li>
                 <b>02</b>
-                <span>调研策略</span>
-                <p>梳理定位与视觉方向</p>
+                <span>调研定位</span>
+                <p>梳理方向，找参考与差异点</p>
               </li>
               <li>
                 <b>03</b>
-                <span>视觉设计</span>
-                <p>从概念到系统化产出</p>
+                <span>设计产出</span>
+                <p>从草图到可落地的系统化方案</p>
               </li>
               <li>
                 <b>04</b>
-                <span>交付落地</span>
-                <p>规范交付与持续支持</p>
+                <span>开发交付</span>
+                <p>用代码实现并跟进迭代</p>
               </li>
             </ol>
           </BorderGlow>
